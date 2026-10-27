@@ -1,0 +1,14 @@
+# For now the repository holds only this README, its images and the folder layout; the code follows later.
+# To publish the code, delete this block (down to the first blank line).
+*
+!*/
+!/README.md
+!/.gitignore
+!/assets/*
+!.gitkeep
+
+results/
+__pycache__/
+*.egg-info/
+baselines/venv/
+baselines/venv_codeevolve/
