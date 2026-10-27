@@ -1,15 +1,29 @@
-# SwarmEvolve
+<div align="center">
 
-**Latent Agent Swarms for Rapid Evolutionary Search**\
-Qile Jiang and George Em Karniadakis, Division of Applied Mathematics, Brown University
+<h1>SwarmEvolve</h1>
 
-![Workflow of SwarmEvolve](assets/method_overview.png)
+<h3>Latent Agent Swarms for Rapid Evolutionary Search</h3>
 
-SwarmEvolve is a super fast, low-cost, and capable framework for LLM-guided evolutionary search. It solves problems in mathematical discovery and scientific computing by refining and recombining existing programs.
+<p>Qile Jiang and George Em Karniadakis<br><sub>Division of Applied Mathematics, Brown University</sub></p>
 
-SwarmEvolve uses swarms of open-weight LLM agents, hundreds of them per round, to reason in latent space. Each swarm studies the problem with a different focus and passes their KV caches to a summarizer agent that writes a new program, so the ideas of different agents combine directly in latent space.
+<br>
+
+<img src="assets/method_overview.gif" alt="Workflow of SwarmEvolve" width="100%">
+
+</div>
+
+
+**SwarmEvolve** is a super fast, low-cost, and capable framework for **LLM-guided evolutionary search**. It solves problems in mathematical discovery and scientific computing by refining and recombining existing programs.
+
+**SwarmEvolve** uses **swarms of open-weight LLM agents**, hundreds of them per round, to reason in latent space. Each swarm studies the problem with a different focus and passes their KV caches to a summarizer agent that writes a new program, so the ideas of different agents combine directly in latent space.
 
 ## Results
+
+<p align="center">
+  <img src="assets/headline_results.png" alt="Programs evaluated in 60 minutes, mean best score after 15 minutes, and median minutes to reach the 60-minute score of OpenEvolve, with Qwen3 8B" width="100%">
+  <br>
+  <sub><i>Qwen3 8B, one GPU, 60 minutes per run.</i></sub>
+</p>
 
 We compare SwarmEvolve with three open-source frameworks:
 
@@ -17,12 +31,16 @@ We compare SwarmEvolve with three open-source frameworks:
 - **[ShinkaEvolve](https://github.com/SakanaAI/ShinkaEvolve)**: R. T. Lange, Y. Imajuku, and E. Cetin, *ShinkaEvolve: Towards Open-Ended and Sample-Efficient Program Evolution*, International Conference on Learning Representations, 2026.
 - **[CodeEvolve](https://github.com/inter-co/science-codeevolve)**: H. Assumpção, D. Ferreira, L. Campos, and F. Murai, *CodeEvolve: an open source evolutionary coding agent for algorithmic discovery and optimization*, arXiv:2510.14150, 2025.
 
-![Programs evaluated in 60 minutes, mean best score after 15 minutes, and median minutes to reach the 60-minute score of OpenEvolve, with Qwen3 8B](assets/headline_results.png)
-
 On 21 problems from mathematical discovery and scientific computing, with Qwen3 8B, 14B, and 32B on one GPU for 60 minutes per run, SwarmEvolve achieves the highest average score with every model.
 
-![Best score within 60 minutes for each problem, framework, and model](assets/main_results.png)
+<p align="center">
+  <img src="assets/main_results.png" alt="Best score within 60 minutes for each problem, framework, and model" width="100%">
+  <br>
+  <sub><i>Best score within 60 minutes, averaged over three runs. Bold: best; underline: second best.</i></sub>
+</p>
 
 ## Code
 
-SwarmEvolve will be released soon. Please check back later! For questions or early access, please reach out to the author.
+SwarmEvolve will be released soon. Please check back later! 
+
+For questions or early access, please reach out to the authors.
