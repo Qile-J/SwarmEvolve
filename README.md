@@ -8,9 +8,13 @@
 
 <br>
 
-<img src="assets/method_overview.gif" alt="Workflow of SwarmEvolve" width="100%">
+<p>
+  <img src="assets/method_overview.gif" alt="Workflow of SwarmEvolve" width="100%">
+  <br>
+  <sub><i><a href="assets/method_overview.mp4">Step-by-step video with captions (43 s)</a></i></sub>
+</p>
+
 <br>
-<sub><i><a href="assets/method_overview.mp4">Step-by-step video with captions (43 s)</a></i></sub>
 
 </div>
 
