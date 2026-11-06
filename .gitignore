@@ -1,14 +1,17 @@
-# For now the repository holds only this README, its images and the folder layout; the code follows later.
-# To publish the code, delete this block (down to the first blank line).
-*
-!*/
+# Public for now: README, assets, benchmarks, and baselines. The SwarmEvolve code follows later.
+/*
 !/README.md
 !/.gitignore
-!/assets/*
-!.gitkeep
+!/assets/
+!/benchmarks/
+!/baselines/
+!/analysis/
+/analysis/*
+!/analysis/.gitkeep
 
 results/
 __pycache__/
 *.egg-info/
+.DS_Store
 baselines/venv/
 baselines/venv_codeevolve/

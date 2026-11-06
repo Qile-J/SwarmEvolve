@@ -45,8 +45,13 @@ On 21 problems from mathematical discovery and scientific computing, with Qwen3 
   <sub><i>Best score within 60 minutes, averaged over three runs. Bold: best; underline: second best.</i></sub>
 </p>
 
+## Benchmarks and baselines
+
+- `benchmarks/problems/`: the 21 problems, each with `task.md`, `initial_program.py`, and `evaluator.py`.
+- `benchmarks/evaluation.py`: the shared evaluation used to score every framework.
+- `benchmarks/calibration/`: expert reference solvers for the scientific-computing problems.
+- `baselines/`: OpenEvolve, ShinkaEvolve, and CodeEvolve at the commits used in the paper, with the scripts to run them on the benchmarks (`setup_baselines.sh`, then `run_baseline.sh <framework> <problem> <model>`).
+
 ## Code
 
-SwarmEvolve will be released soon. Please check back later! 
-
-For questions or early access, please reach out to the authors.
+The SwarmEvolve code will be released soon. For questions or early access, please reach out to the authors.
